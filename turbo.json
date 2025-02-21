@@ -1,5 +1,5 @@
 {
-  "$schema": "https://turborepo.org/schema.json",
+  "$schema": "https://turbo.build/schema.v1.json",
   "pipeline": {
     "lint": {
       "outputs": []
@@ -11,7 +11,6 @@
     "build": {
       "dependsOn": ["^build"],
       "outputs": [
-        ".next/**",
         "build/**",
         "node_modules/.cache/metro/**"
       ]
